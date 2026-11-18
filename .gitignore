@@ -1,0 +1,10 @@
+00_raw/
+02_clean/
+03_results/*.kraken
+03_results/*.bz2
+03_results/humann/
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
