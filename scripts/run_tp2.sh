@@ -38,7 +38,7 @@ fastp -i 00_raw/sample_R1.fastq.gz -I 00_raw/sample_R2.fastq.gz \
 
 # QC of cleaned reads, then aggregate everything (before vs after)
 fastqc 02_clean/sample_R1.clean.fq.gz 02_clean/sample_R2.clean.fq.gz --outdir 01_qc/ -t 2
-multiqc 01_qc/ -o 01_qc/ --force
+multiqc 01_qc/ -o 01_qc/ --force -s
 
 # ===== 3. Host read removal (GRCh38) =====
 bowtie2 -x "$HUMAN_INDEX" \

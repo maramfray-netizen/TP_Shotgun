@@ -29,8 +29,10 @@ TODO
 
 | Sample | Total sequences | Mean length | %GC | % remaining after dedup | Per-base quality | GC content | Adapters | Overrepresented |
 |---|---|---|---|---|---|---|---|---|
-| sample_R1 | 94121.0 | 119.45243356955409 | 46.0 | 97.68277005131692 | pass | warn | pass | warn |
-| sample_R2 | 94121.0 | 119.47217411629711 | 46.0 | 97.82407751723845 | pass | warn | pass | warn |
+| sample_R1.clean.fq.gz | 89953.0 | 121.47777728369259 | 46.0 | 97.88667415205718 | pass | warn | pass | pass |
+| sample_R1.fastq.gz | 94121.0 | 119.45243356955409 | 46.0 | 97.68277005131692 | pass | warn | pass | warn |
+| sample_R2.clean.fq.gz | 89953.0 | 122.36348426400454 | 46.0 | 98.00117839316087 | pass | pass | pass | pass |
+| sample_R2.fastq.gz | 94121.0 | 119.47217411629711 | 46.0 | 97.82407751723845 | pass | warn | pass | warn |
 <!-- QC:END -->
 
 ## 3. Read cleaning and host removal
