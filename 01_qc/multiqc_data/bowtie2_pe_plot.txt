@@ -1,2 +1,0 @@
-Sample	PE one mate multimapped	PE neither mate aligned
-bowtie2_host_removal.log	4.5	89948.5

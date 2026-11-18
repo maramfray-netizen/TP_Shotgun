@@ -1,5 +1,0 @@
-Sample	Unique Reads	Duplicate Reads
-sample_R1.clean.fq.gz	88052.0	1901.0
-sample_R1.fastq.gz	91940.0	2181.0
-sample_R2.clean.fq.gz	88155.0	1798.0
-sample_R2.fastq.gz	92074.0	2047.0

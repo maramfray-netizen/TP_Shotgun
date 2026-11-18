@@ -1,2 +1,0 @@
-Sample	Passed Filter	Low Quality	Too Many N	Low Complexity	Too Short	Too Long
-sample_R1.fastq.gz_sample_R2.fastq.gz	179906.0	2798.0	0.0	nan	5538.0	0.0

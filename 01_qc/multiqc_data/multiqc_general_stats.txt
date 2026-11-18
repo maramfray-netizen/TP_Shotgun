@@ -1,7 +1,0 @@
-Sample	bowtie_2_hisat2-overall_alignment_rate	fastp-pct_duplication	fastp-after_filtering_q30_rate	fastp-after_filtering_q30_bases	fastp-filtering_result_passed_filter_reads	fastp-after_filtering_gc_content	fastp-pct_surviving_reads	fastp-pct_surviving_bases	fastp-pct_adapter	fastp-before_filtering_read1_mean_length	fastp-before_filtering_read2_mean_length	fastqc-percent_duplicates	fastqc-percent_gc	fastqc-avg_sequence_length	fastqc-median_sequence_length	fastqc-percent_fails	fastqc-total_sequences
-bowtie2_host_removal.log	0.01																
-sample_R1.clean.fq.gz												2.113325847942818	46.0	121.47777728369259	130	0.0	0.08995299999999999
-sample_R1.fastq.gz												2.317229948683078	46.0	119.45243356955409	128	0.0	0.094121
-sample_R1.fastq.gz_sample_R2.fastq.gz		0.182743	91.38629999999999	20.06512	0.17990599999999998	46.366099999999996	95.57165775969231	97.54126941979607	0.22205458930525598	119.0	119.0						
-sample_R2.clean.fq.gz												1.9988216068391296	46.0	122.36348426400454	130	0.0	0.08995299999999999
-sample_R2.fastq.gz												2.1759224827615498	46.0	119.47217411629711	128	0.0	0.094121

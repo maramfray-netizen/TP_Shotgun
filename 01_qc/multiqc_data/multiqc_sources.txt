@@ -1,7 +1,0 @@
-Module	Section	Sample Name	Source
-Bowtie 2 / HiSAT2	all_sections	bowtie2_host_removal.log	/home/maram/TP_Shotgun/01_qc/bowtie2_host_removal.log
-fastp	all_sections	sample_R1.fastq.gz_sample_R2.fastq.gz	/home/maram/TP_Shotgun/01_qc/fastp.json
-FastQC	all_sections	sample_R1.clean.fq.gz	/home/maram/TP_Shotgun/01_qc/sample_R1.clean_fastqc.zip
-FastQC	all_sections	sample_R1.fastq.gz	/home/maram/TP_Shotgun/01_qc/sample_R1_fastqc.zip
-FastQC	all_sections	sample_R2.clean.fq.gz	/home/maram/TP_Shotgun/01_qc/sample_R2.clean_fastqc.zip
-FastQC	all_sections	sample_R2.fastq.gz	/home/maram/TP_Shotgun/01_qc/sample_R2_fastqc.zip

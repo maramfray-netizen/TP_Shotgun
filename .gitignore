@@ -8,3 +8,8 @@
 *.fq.gz
 *.bam
 *.sam
+
+# Generated QC files
+01_qc/multiqc_data/
+01_qc/*_fastqc.zip
+01_qc/*_fastqc/
