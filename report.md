@@ -20,7 +20,13 @@
 **Question 1.** Describe the FastQC report: per-base quality (Phred score), GC content, overrepresented sequences, adapter presence. What does a Q30 score mean?
 
 **Answer:**
-TODO
+The raw dataset contains 94,121 read pairs (11.2 Mbp per file). Read lengths range from 44 to 143 bp (mean about 119 bp, median 128 bp) instead of a uniform 150 bp, which shows that the reads had already been quality-trimmed by the data submitters. The mean GC content is 46% for both R1 and R2, and duplication is low (about 2.3% of sequences are duplicates).
+
+The per-base sequence quality and per-sequence quality modules passed: the median Phred score is at least 25 at every position, and fastp reports that 97.4% of bases have Q >= 20 and 90.7% have Q >= 30. The adapter content module passed and fastp found no adapter-dimer reads, consistent with the pre-trimming. Four modules raised warnings: the per-sequence GC content deviates from a single normal distribution, which is expected for a gut metagenome that mixes many genomes with different GC contents; the per-base sequence content shows composition bias, typical of fragmentation-based libraries and trimmed reads; the sequence length distribution is non-uniform because of the trimming; and a small set of overrepresented sequences was flagged in the raw reads [add the sequence(s) and their possible source from the FastQC report], which no longer appeared after cleaning.
+
+A Phred score is defined as Q = -10 x log10(P), where P is the probability that the base call is wrong. A Q30 score therefore means an error probability of 0.1% (99.9% base call accuracy), and Q20 means 1%.
+
+After fastp (-q 20, -l 50), 89,953 read pairs remained (95.6% of the raw pairs): 2,798 reads were removed for low quality and 5,538 reads for being shorter than 50 bp, and Q30 rose slightly to 91.4%.
 
 *Hint:* Q = -10 × log10(P), so Q20 = 1% error and Q30 = 0.1% error (99.9% base call accuracy). Add a MultiQC screenshot (R1 vs R2, before vs after fastp).
 
