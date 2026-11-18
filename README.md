@@ -71,3 +71,19 @@ Maram Fray, M2 Bioinformatics
 | fasterq-dump (SRA Toolkit) | 3.4.1 |
 
 The full environment is in `environment_tp2_qc.yml`.
+
+## Dataset notes
+
+`SRR8114121` is a human gut metagenome (Illumina, paired-end). Only the first 100,000 spots are downloaded to keep the analysis small. The run was already quality-trimmed and filtered against the human genome by the data submitters (read lengths 44 to 143 bp), so fastp and host removal remove few reads.
+
+## Databases
+
+Run `bash scripts/setup_databases.sh` once. Kraken2/Bracken uses the prebuilt Standard-8 database (capped at 8 GB) instead of the full Standard database because of limited RAM (about 2.8 GB under WSL2); Kraken2 runs with `--memory-mapping`.
+
+## Status
+
+- [x] Raw QC, fastp cleaning, host removal
+- [ ] Kraken2/Bracken, Krona
+- [ ] MetaPhlAn
+- [ ] HUMAnN
+- [ ] Report finalized
