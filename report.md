@@ -24,6 +24,15 @@ TODO
 
 *Hint:* Q = -10 × log10(P), so Q20 = 1% error and Q30 = 0.1% error (99.9% base call accuracy). Add a MultiQC screenshot (R1 vs R2, before vs after fastp).
 
+<!-- QC:START -->
+**FastQC summary (from MultiQC):**
+
+| Sample | Total sequences | Mean length | %GC | % remaining after dedup | Per-base quality | GC content | Adapters | Overrepresented |
+|---|---|---|---|---|---|---|---|---|
+| sample_R1 | 94121.0 | 119.45243356955409 | 46.0 | 97.68277005131692 | pass | warn | pass | warn |
+| sample_R2 | 94121.0 | 119.47217411629711 | 46.0 | 97.82407751723845 | pass | warn | pass | warn |
+<!-- QC:END -->
+
 ## 3. Read cleaning and host removal
 
 **Table 6.** Number of read pairs at each step (from `03_results/table6_read_counts.tsv`).
