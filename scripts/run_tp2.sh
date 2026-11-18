@@ -27,7 +27,7 @@ if [ ! -f 00_raw/sample_R1.fastq.gz ]; then
 fi
 
 # ===== 1. QC of raw reads =====
-fastqc 00_raw/sample_R1.fastq.gz 00_raw/sample_R2.fastq.gz -o 01_qc/ -t 2
+fastqc 00_raw/sample_R1.fastq.gz 00_raw/sample_R2.fastq.gz --outdir 01_qc/ -t 2
 multiqc 01_qc/ -o 01_qc/
 
 # ===== 2. Read cleaning (adapters, Phred >= 20, length >= 50) =====
@@ -37,7 +37,7 @@ fastp -i 00_raw/sample_R1.fastq.gz -I 00_raw/sample_R2.fastq.gz \
   -h 01_qc/fastp.html -j 01_qc/fastp.json
 
 # QC of cleaned reads, then aggregate everything (before vs after)
-fastqc 02_clean/sample_R1.clean.fq.gz 02_clean/sample_R2.clean.fq.gz -o 01_qc/ -t 2
+fastqc 02_clean/sample_R1.clean.fq.gz 02_clean/sample_R2.clean.fq.gz --outdir 01_qc/ -t 2
 multiqc 01_qc/ -o 01_qc/ --force
 
 # ===== 3. Host read removal (GRCh38) =====
