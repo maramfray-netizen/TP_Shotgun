@@ -39,9 +39,9 @@ TODO
 
 | Step | Read pairs | % of raw reads |
 |---|---|---|
-| Raw reads | | 100 % |
-| After fastp | | |
-| After host removal | | |
+| Raw reads | 94,121 | 100 % |
+| After fastp | 89,953 | 95.6 % |
+| After host removal | 89,953 | 95.6 % |
 
 ## 4. Taxonomic profiles
 

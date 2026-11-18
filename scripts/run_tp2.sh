@@ -8,7 +8,7 @@ RUN="SRR8114121"                      # human gut metagenome, Illumina paired-en
 N_SPOTS=100000                        # number of read pairs kept (small test subset)
 N_SPOTS=100000                        # number of read pairs kept (small test subset)
 THREADS=8
-HUMAN_INDEX="$HOME/db/GRCh38/GRCh38_index"   # Bowtie2 index prefix
+HUMAN_INDEX="$HOME/db/GRCh38/GRCh38_noalt_as"
 KRAKEN_DB="$HOME/db/k2_standard"             # Kraken2 database directory
 # --------------------------------------
 

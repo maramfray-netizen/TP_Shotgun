@@ -1,0 +1,4 @@
+step	read_pairs
+raw	94121
+after_fastp	89953
+after_host_removal	89953
