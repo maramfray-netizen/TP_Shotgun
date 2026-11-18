@@ -21,7 +21,7 @@ Read-based analysis of a human fecal sample (Illumina paired-end, 2 × 150 bp): 
 
 ## Data
 
-- Sample: `SRRxxxxxxx` (to be completed)
+- Sample: `SRR8114121` (human gut metagenome, Illumina paired-end), first 100,000 read pairs
 - Raw reads are not versioned (see `.gitignore`).
 
 ## Environment

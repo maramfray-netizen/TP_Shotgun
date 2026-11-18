@@ -4,7 +4,9 @@
 set -euo pipefail
 
 # ---------- Settings to edit ----------
-RUN="SRRxxxxxxx"                      # SRA run accession given in class
+RUN="SRR8114121"                      # human gut metagenome, Illumina paired-end
+N_SPOTS=100000                        # number of read pairs kept (small test subset)
+N_SPOTS=100000                        # number of read pairs kept (small test subset)
 THREADS=8
 HUMAN_INDEX="$HOME/db/GRCh38/GRCh38_index"   # Bowtie2 index prefix
 KRAKEN_DB="$HOME/db/k2_standard"             # Kraken2 database directory
@@ -15,13 +17,13 @@ source "$(conda info --base)/etc/profile.d/conda.sh"
 
 mkdir -p 00_raw 01_qc 02_clean 03_results
 
-# ===== 0. Download reads =====
+# ===== 0. Download reads (small subset) =====
 conda activate tp2_qc
 if [ ! -f 00_raw/sample_R1.fastq.gz ]; then
-  fasterq-dump --split-files --threads 4 -O 00_raw "$RUN"
-  gzip 00_raw/*.fastq
+  fastq-dump -X "$N_SPOTS" --split-3 --gzip -O 00_raw "$RUN"
   mv "00_raw/${RUN}_1.fastq.gz" 00_raw/sample_R1.fastq.gz
   mv "00_raw/${RUN}_2.fastq.gz" 00_raw/sample_R2.fastq.gz
+  rm -f "00_raw/${RUN}.fastq.gz"   # unpaired reads, not used
 fi
 
 # ===== 1. QC of raw reads =====
