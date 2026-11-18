@@ -59,3 +59,15 @@ Prerequisites: the reference databases (GRCh38 Bowtie2 index, Kraken2 database, 
 ## Author
 
 Maram Fray, M2 Bioinformatics
+
+## Software versions (tp2_qc)
+
+| Tool | Version |
+|---|---|
+| FastQC | 0.13.0 |
+| fastp | 1.4.0 |
+| Bowtie2 | 2.5.5 |
+| Kraken2 | 2.17.2 |
+| fasterq-dump (SRA Toolkit) | 3.4.1 |
+
+The full environment is in `environment_tp2_qc.yml`.
