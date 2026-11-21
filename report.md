@@ -57,16 +57,16 @@ After fastp (-q 20, -l 50), 89,953 read pairs remained (95.6% of the raw pairs):
 
 | Rank | Species | Bracken relative abundance (%) | MetaPhlAn relative abundance (%) |
 |---|---|---|---|
-| 1 | Agathobacter rectalis | 25.03 | TODO |
-| 2 | Faecalibacterium prausnitzii | 11.34 | TODO |
-| 3 | Roseburia intestinalis | 7.65 | TODO |
-| 4 | Bifidobacterium longum | 5.46 | TODO |
-| 5 | Phocaeicola vulgatus | 4.35 | TODO |
-| 6 | Blautia wexlerae | 4.21 | TODO |
-| 7 | Roseburia faecis | 3.34 | TODO |
-| 8 | Coprococcus sp. ART55/1 | 2.75 | TODO |
-| 9 | Anaerostipes hadrus | 1.95 | TODO |
-| 10 | Phocaeicola coprocola | 1.79 | TODO |
+| 1 | Agathobacter rectalis | 25.03 | not found |
+| 2 | Faecalibacterium prausnitzii | 11.34 | 12.61 |
+| 3 | Roseburia intestinalis | 7.65 | 6.47 |
+| 4 | Bifidobacterium longum | 5.46 | 5.58 |
+| 5 | Phocaeicola vulgatus | 4.35 | 1.61 |
+| 6 | Blautia wexlerae | 4.21 | 2.27 |
+| 7 | Roseburia faecis | 3.34 | 2.67 |
+| 8 | Coprococcus sp. ART55/1 | 2.75 | not found |
+| 9 | Anaerostipes hadrus | 1.95 | 1.03 |
+| 10 | Phocaeicola coprocola | 1.79 | 2.93 |
 
 **Question 2.** Compare the Kraken2/Bracken and MetaPhlAn profiles. Explain the differences from the principle of each tool (k-mer classification vs marker genes).
 
